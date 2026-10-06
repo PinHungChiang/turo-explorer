@@ -1,0 +1,23 @@
+這是依照你提供的三張 Turo 深色截圖更新的版本。
+
+1. 先回到舊專案的 Terminal，按 Control+C 停止伺服器。
+2. 把舊資料夾改名為 turo-explorer-old，避免混到新舊檔案。
+3. 解壓縮新版 ZIP，用 VS Code 開啟新版 turo-explorer。
+4. Terminal → New Terminal，依序輸入：
+   npm ci
+   npx expo start --clear
+5. 按 w 開啟瀏覽器。第一次啟動預設深色，Calgary 收藏裡有一台 Mustang 示範車。
+6. 測試 Search、Favorites、Trips、Inbox、More 五個分頁。
+   Search 輸入 Hyundai → 點車 → Continue → 日期／天數 → Confirm demo booking。
+   More 可以切換 Dark mode、修改個人資料。
+7. reference 資料夾已包含你提供的三張「真正 Turo」參考截圖。
+   docs/app-screenshots 是本專案的預覽，兩者不要混用。
+8. 在 iPhone／Android 上實際測試；打包成功不能取代手機測試。
+9. 上傳 GitHub 時保留 src、assets、reference、package.json、package-lock.json 和設定檔。
+   不要上傳 node_modules、dist、.expo。
+10. D2L 提交 GitHub repository 連結。
+
+本版已改為 Expo Router，請不要用新檔案蓋在舊資料夾裡，否則舊入口與設定可能殘留。
+本版使用新的本機資料儲存名稱，舊示範資料保留但不載入。
+README.md 有元件拆分理由；VALIDATION.md 有檢查結果。
+老師要求的 80% 相似度仍由老師判定，沒有保證分數。
